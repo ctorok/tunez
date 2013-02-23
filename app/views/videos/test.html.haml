@@ -1,0 +1,17 @@
+%h1 new
+
+%div{:class => 'x', :id => 'y'}
+  %p hello
+
+%div.x#y
+
+.x#y
+
+.x.y#z hello
+
+%p= 3**9
+
+
+%ol
+  - (0..1000).map{|i| i**2}.select{|i| i.even?}.each do |evens|
+    %li= evens
